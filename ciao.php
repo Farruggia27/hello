@@ -1,3 +1,3 @@
-<php>
-  echo "ciao mondo";
-</php>
+<?php
+echo "Hello World!";
+?> 
