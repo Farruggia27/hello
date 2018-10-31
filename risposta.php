@@ -13,7 +13,7 @@ if (($login=='mamma') and ($pass=='ciao'))
 }
 
 
-function dati($nome, $cognome, $data)
+function dati($nome, $cognome, $data,$indirizzo)
 {
 	
 	
@@ -22,6 +22,7 @@ function dati($nome, $cognome, $data)
 			Il tuo nome e': $nome <br>
 			Il tuo cognome e': $cognome <br>
 			La tua data di nascita e': $data
+			Il tuo indirizzo e': $indirizzo
 		</fieldset>";
 }
 
@@ -30,6 +31,7 @@ $op=$_POST['op'];
 $nome=$_POST['nome'];
 $cognome=$_POST['cognome'];
 $data = date('d-m-Y', strtotime($_POST['data']));
+$indirizzo=$_POST['indirizzo'];
 $login=$_POST['login'];
 $pass=$_POST['password'];
  
@@ -37,7 +39,7 @@ $pass=$_POST['password'];
 switch ($op){
 
       case "dati":
-		   dati($nome,$cognome,$data);
+		   dati($nome,$cognome,$data,$indirizzo);
            break;
 
       case "check":
@@ -45,7 +47,7 @@ switch ($op){
            break;
 
       default:
-           dati($nome,$cognome,$data);
+           dati($nome,$cognome,$data,$indirizzo);
            break;
 
 }
