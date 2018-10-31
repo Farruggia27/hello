@@ -22,7 +22,7 @@
   </td>
   <td>
    <font face=verdana size=2>Indirizzo</font>
-   <input type=text size=20 name=indirizzo>
+   <input type=text size=30 name=indirizzo>
   </td>
  </tr>
  <tr>
