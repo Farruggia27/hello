@@ -20,6 +20,10 @@
    <font face=verdana size=2>Data di nascita</font>
    <input type=date  name=data>
   </td>
+  <td>
+   <font face=verdana size=2>Indirizzo</font>
+   <input type=text size=20 name=indirizzo>
+  </td>
  </tr>
  <tr>
   <td>
