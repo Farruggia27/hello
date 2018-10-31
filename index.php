@@ -3,7 +3,7 @@
 <title>Farruggia</title>
 
 </head>
-<body bgcolor="3B2323">
+<body bgcolor="CD3333">
 <form action=risposta.php method=post>
 <center>
 <table width=50% bgcolor="909090">
