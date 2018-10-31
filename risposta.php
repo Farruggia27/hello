@@ -9,16 +9,13 @@ if (($login=='mamma') and ($pass=='ciao'))
 
 
 function dati($nome, $cognome, $data)
-{echo"Il tuo nome e': $nome <br>Il tuo cognome e': $cognome <br>La tua data di nascita: $data";}
+{echo"Il tuo nome e': $nome <br>Il tuo cognome e': $cognome <br>La tua data di nascita e': $data";}
 
 /******* Programma principale *******/
 $op=$_POST['op'];
 $nome=$_POST['nome'];
 $cognome=$_POST['cognome'];
-
 $data = date('Y-m-d', strtotime($_POST['data']));
-echo $data;
-
 $login=$_POST['login'];
 $pass=$_POST['password'];
  
