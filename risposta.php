@@ -3,8 +3,13 @@
 function contrpass($login, $pass)
 {
 if (($login=='mamma') and ($pass=='ciao')) 
-{echo"Password corretta <br> puoi entrare <br><br> $login $pass";}
- else {echo"Login o Password SBAGLIATA";};
+{
+	echo"Password corretta <br> puoi entrare <br><br> $login $pass";
+}
+ else 
+ {
+	 echo"Login o Password SBAGLIATA";
+ };
 }
 
 
