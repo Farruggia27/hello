@@ -8,7 +8,7 @@ if (($login=='mamma') and ($pass=='ciao')) {echo"Password corretta <br> puoi ent
 
 
 function dati($nome, $cognome, $data)
-{echo"Il tuo nome e': $nome <br>Il tuo cognome e': $cognome";}
+{echo"Il tuo nome e': $nome <br>Il tuo cognome e': $cognome <br>La tua data di nascita: $data";}
 
 /******* Programma principale *******/
 $op=$_POST['op'];
