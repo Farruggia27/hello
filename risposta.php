@@ -9,7 +9,11 @@ if (($login=='mamma') and ($pass=='ciao'))
 
 
 function dati($nome, $cognome, $data)
-{echo"Il tuo nome e': $nome <br>Il tuo cognome e': $cognome <br>La tua data di nascita e': $data";}
+{
+	
+	
+	echo"<fieldset>Il tuo nome e': $nome <br>Il tuo cognome e': $cognome <br>La tua data di nascita e': $data</fieldset>";
+}
 
 /******* Programma principale *******/
 $op=$_POST['op'];
