@@ -16,6 +16,10 @@
    <font face=verdana size=2>Cognome</font>
    <input type=text size=10 name=cognome>
   </td>
+  <td>
+   <font face=verdana size=2>Data di nascita</font>
+   <input type=date  name=data>
+  </td>
  </tr>
  <tr>
   <td>
