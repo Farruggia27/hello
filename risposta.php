@@ -19,7 +19,7 @@ function dati($nome, $cognome, $data)
 $op=$_POST['op'];
 $nome=$_POST['nome'];
 $cognome=$_POST['cognome'];
-$data = date('Y-m-d', strtotime($_POST['data']));
+$data = date('d-m-Y', strtotime($_POST['data']));
 $login=$_POST['login'];
 $pass=$_POST['password'];
  
