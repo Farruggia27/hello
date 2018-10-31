@@ -12,7 +12,12 @@ function dati($nome, $cognome, $data)
 {
 	
 	
-	echo"<fieldset>Il tuo nome e': $nome <br>Il tuo cognome e': $cognome <br>La tua data di nascita e': $data</fieldset>";
+	echo"	<p align='center' color='red'>I TUOI DATI SONO<br></p>
+		<fieldset>
+			Il tuo nome e': $nome <br>
+			Il tuo cognome e': $cognome <br>
+			La tua data di nascita e': $data
+		</fieldset>";
 }
 
 /******* Programma principale *******/
