@@ -1,9 +1,9 @@
 <html>
 <head>
-<title>Primo esempio PHP</title>
+<title>Farruggia</title>
 
 </head>
-<body bgcolor="b0b0b0">
+<body bgcolor="3B2323">
 <form action=risposta.php method=post>
 <center>
 <table width=50% bgcolor="909090">
