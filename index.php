@@ -33,7 +33,10 @@
  </tr>
  <tr>
   <td>
-<SELECT size=1 name=op> <OPTION selected></OPTION> <OPTION value=dati>Visualizza dati</OPTION> <OPTION value=check>Esegui login</OPTION></SELECT>
+  <SELECT size=1 name=op> <OPTION selected>
+   </OPTION> <OPTION value=dati>Visualizza dati</OPTION> 
+   <OPTION value=check>Esegui login</OPTION>
+  </SELECT>
   </td>
   <td>
    <input type=submit value=invia>
