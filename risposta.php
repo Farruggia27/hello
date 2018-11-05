@@ -35,6 +35,19 @@ $login=$_POST['login'];
 $pass=$_POST['password'];
  
   
+switch ($op){
+
+      case "dati":
+		   dati($nome,$cognome,$data);
+           break;
+
+      case "check":
+           contrpass($login,$pass);
+           break;
+
+      default:
+           dati($nome,$cognome,$data);
+           break;
 
 
  ?>
