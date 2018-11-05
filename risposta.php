@@ -38,7 +38,7 @@ $pass=$_POST['password'];
 switch ($op){
 
       case "dati":
-		   dati($nome,$cognome,$data);
+		   dati($nome,$cognome,$data,$indirizzo);
            break;
 
       case "check":
@@ -46,7 +46,7 @@ switch ($op){
            break;
 
       default:
-           dati($nome,$cognome,$data);
+           dati($nome,$cognome,$data,$indirizzo);
            break;
 
 
