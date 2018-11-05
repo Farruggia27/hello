@@ -10,7 +10,7 @@ if (($login=='mamma') and ($pass=='ciao'))
 	 echo"Login o Password SBAGLIATA";
  };
 }
-function dati($nome, $cognome, $data,$indirizzo,$giorno,$mese,$anno)
+function dati($nome, $cognome, $data,$indirizzo,$giorno,,$anno)
 {
 	
 	
@@ -24,7 +24,7 @@ function dati($nome, $cognome, $data,$indirizzo,$giorno,$mese,$anno)
 			
 			Il tuo giorno di nascita(con metodo text) e': $giorno <br>
 			il tuo anno di nascita (con metodo text) e': $anno <br>
-			Il tuo mese di nascita (con combobox) e': $mese <br>
+			/*Il tuo mese di nascita (con combobox) e': $mese <br>*/
 			Il tuo indirizzo e': $indirizzo <br>
 		</fieldset>";
 }
@@ -36,7 +36,7 @@ $data = date('d-m-Y', strtotime($_POST['data']));
 
 $giorno=$_POST['giorno'];
 $anno=$_POST['anno'];
-$mese = $_POST['mese'];
+/*$mese = $_POST['mese'];*/
 
 $indirizzo=$_POST['indirizzo'];
 $login=$_POST['login'];
