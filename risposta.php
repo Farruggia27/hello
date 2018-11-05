@@ -10,7 +10,7 @@ if (($login=='mamma') and ($pass=='ciao'))
 	 echo"Login o Password SBAGLIATA";
  };
 }
-function dati($nome, $cognome, $data)
+function dati($nome, $cognome, $data,$indirizzo)
 {
 	
 	
