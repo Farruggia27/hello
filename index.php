@@ -27,6 +27,33 @@
  </tr>
  <tr>
   <td>
+   <font face=verdana size=2>Giorno di nascita</font>
+   <input type=text size=30 name=giorno>
+  </td> <td>
+   <font face=verdana size=2>Anno di nascita</font>
+   <input type=text size=30 name=anno>
+  </td> <td>
+  
+  <font face=verdana size=2>Mese di nascita</font>
+   <select id="mese" name="mese">
+		  <option value="Gennaio">Gennaio</option>
+		  <option value="Febbraio">Febbraio</option>
+		  <option value="Marzo">Marzo</option>
+		  <option value="Aprile">Aprile</option>
+		  <option value="Maggio">Maggio</option>
+		  <option value="Giugno">Giugno</option>
+		  <option value="Luglio">Luglio</option>
+		  <option value="Agosto">Agosto</option>
+		  <option value="Settembre">Settembre</option>
+		  <option value="Ottobre">Ottobre</option>
+		  <option value="Novembre">Novembre</option>
+		  <option value="Dicembre">Dicembre</option>
+
+</form>
+  </td>
+  </tr>
+<tr>
+  <td>
    <font face=verdana size=2>Login</font>
    <input type=text size=10 name=login>
   </td>
@@ -52,4 +79,3 @@
 </center>
 </body>
 </html>
-
