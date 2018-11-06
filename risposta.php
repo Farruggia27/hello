@@ -58,14 +58,9 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 	return true;
 }
 
-$email = 'test@dominio.it';
 
-if(chkEmail($email)) {
-	echo 'Indirizzo email corretto';
-}
-else {
-	echo 'Indirizzo email errato';
-}
+
+
 /******* Programma principale *******/
 $op=$_POST['op'];
 $nome=$_POST['nome'];
@@ -80,14 +75,23 @@ $mese=$_POST['mese'];
 $anno=$_POST['anno'];
 switch ($op){
       case "dati":
-		chkEmail($email);   
+		if(chkEmail($email)) 
+			echo 'Indirizzo email corretto';
+					
+		else 
+			echo 'Indirizzo email errato';
+  
 		dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo,$email);
            break;
       case "check":
            contrpass($login,$pass);
            break;
       default:
-           	chkEmail($email);
+           	if(chkEmail($email)) 
+			echo 'Indirizzo email corretto';
+					
+		else 
+			echo 'Indirizzo email errato';
 		dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo,$email);
            break;
            }
