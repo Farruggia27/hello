@@ -32,8 +32,8 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 		</fieldset>";
 	}
 					
-		else 
-			alert('Indirizzo email errato');
+	else 
+		alert('Indirizzo email errato');
 	
   
 		
