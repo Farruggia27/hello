@@ -17,17 +17,23 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 	echo"	<p align='center'>
 			<font  color='red'>I TUOI DATI SONO<br></font>
 		</p>
-		<fieldset>
+		if(chkEmail($email)) 
+			<fieldset>
 			Il tuo nome e': $nome <br>
 			Il tuo cognome e': $cognome <br>
 			La tua data di nascita (come metodo date )e': $data <br>
             
-            il tuo giorno di nascita e': $giorno<br>
-             il tuo mese di nascita e': $mese<br>
-              il tuo anno di nascita e': $anno<br>
+		    	il tuo giorno di nascita e': $giorno<br>
+		     	il tuo mese di nascita e': $mese<br>
+		      	il tuo anno di nascita e': $anno<br>
 			Il tuo indirizzo e': $indirizzo <br>
 			La tua email e': $email<br>
 		</fieldset>";
+					
+		else 
+			alert('Indirizzo email errato');
+  
+		
 }
  function chkEmail($email)
 {
@@ -75,23 +81,13 @@ $mese=$_POST['mese'];
 $anno=$_POST['anno'];
 switch ($op){
       case "dati":
-		if(chkEmail($email)) 
-			echo 'Indirizzo email corretto';
-					
-		else 
-			echo 'Indirizzo email errato';
-  
+		
 		dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo,$email);
            break;
       case "check":
            contrpass($login,$pass);
            break;
       default:
-           	if(chkEmail($email)) 
-			echo 'Indirizzo email corretto';
-					
-		else 
-			echo 'Indirizzo email errato';
 		dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo,$email);
            break;
            }
