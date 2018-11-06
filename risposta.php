@@ -33,29 +33,29 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 {
 	// elimino spazi, "a capo" e altro alle estremità della stringa
 	$email = trim($email);
-
+	$i= true;
 	// se la stringa è vuota sicuramente non è una mail
 	if(!$email) {
-		return false;
+		$i= false;
 	}
 
 	// controllo che ci sia una sola @ nella stringa
 	$num_at = count(explode( '@', $email )) - 1;
 	if($num_at != 1) {
-		return false;
+		$i= false;
 	}
 
 	// controllo la presenza di ulteriori caratteri "pericolosi":
 	if(strpos($email,';') || strpos($email,',') || strpos($email,' ')) {
-		return false;
+		$i= false;
 	}
 
 	// la stringa rispetta il formato classico di una mail?
 	if(!preg_match( '/^[\w\.\-]+@\w+[\w\.\-]*?\.\w{1,4}$/', $email)) {
-		return false;
+		$i= false;
 	}
-
-	return true;
+	return $i;
+	
 }
 
 
