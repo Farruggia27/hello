@@ -12,12 +12,13 @@ if (($login=='mamma') and ($pass=='ciao'))
 }
 function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 {
-	
+	if(chkEmail($email)) 
+	{
 	
 	echo"	<p align='center'>
 			<font  color='red'>I TUOI DATI SONO<br></font>
 		</p>
-		if(chkEmail($email)) 
+		
 			<fieldset>
 			Il tuo nome e': $nome <br>
 			Il tuo cognome e': $cognome <br>
@@ -29,9 +30,11 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 			Il tuo indirizzo e': $indirizzo <br>
 			La tua email e': $email<br>
 		</fieldset>";
+	}
 					
 		else 
 			alert('Indirizzo email errato');
+	
   
 		
 }
