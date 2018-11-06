@@ -80,14 +80,14 @@ $mese=$_POST['mese'];
 $anno=$_POST['anno'];
 switch ($op){
       case "dati":
-		chkEmail($email)   
+		chkEmail($email);   
 		dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo,$email);
            break;
       case "check":
            contrpass($login,$pass);
            break;
       default:
-           	chkEmail($email)
+           	chkEmail($email);
 		dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo,$email);
            break;
            }
