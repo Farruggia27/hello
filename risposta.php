@@ -42,13 +42,13 @@ $mese=$_POST['mese'];
 $anno=$_POST['anno'];
 switch ($op){
       case "dati":
-		   dati($nome,$cognome,$data,$indirizzo,$giorno,$mese,$anno);
+		   dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo);
            break;
       case "check":
            contrpass($login,$pass);
            break;
       default:
-           dati($nome,$cognome,$data,$indirizzo,$giorno,$mese,$anno);
+           dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo);
            break;
            }
  ?>
