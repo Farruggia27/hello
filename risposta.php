@@ -45,7 +45,7 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 		{
         	echo"
 			<font size='10' color='red'>Dati inseriti errati riprovare</font> <br>
-            		<input type=\"button\" onclick=\"location.href='index.html'\" value=\"Torna alla schermata iniziale\"/>
+            		<input type=\"button\" onclick=\"location.href='index.php'\" value=\"Torna alla schermata iniziale\"/>
 		    ";
             
         }
