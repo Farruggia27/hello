@@ -28,11 +28,11 @@
    <tr>
     <td>
      <font face=verdana size=2>Giorno di nascita</font>
-     <input type=text size=30 name=giorno>
+     <input type=text size=2 name=giorno>
     </td> 
     <td>
      <font face=verdana size=2>Anno di nascita</font>
-     <input type=text size=30 name=anno>
+     <input type=text size=4 name=anno>
     </td> 
     <td>
 
@@ -53,6 +53,11 @@
       </select>
 
     </td>
+     <td>
+         <font face=verdana size=2>Email</font>
+          <input type=text size=30 name=email>
+     </td>
+     
     </tr>
   <tr>
     <td>
