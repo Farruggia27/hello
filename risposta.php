@@ -43,25 +43,25 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 	
 	if($j) 
 	{ 
-	$testo = "Il tuo nome e': " . $nome . "\n"
-	. "Il tuo cognome e': " . $cognome . "\n"
-	. "La tua data di nascita (come metodo date )e': " . $data . "\n"
-	. "il tuo giorno di nascita e': " . $giorno . "\n"
-	. "il tuo mese di nascita e': " . $mese . "\n"
-	. "il tuo anno di nascita e': " . $anno . "\n"
-	. "Il tuo indirizzo e': " . $indirizzo . "\n"
-	. "Il tuo cognome e': " . $cognome . "\n"
-	. "La tua email e': " . $email;
-	mail('$email', 'Grazie per esserti registrato nella piattaforma di prova di Daniele Farruggia\n ', $testo);
-		echo "funzione email fatta";
+		$testo = "Il tuo nome e': " . $nome . "\n"
+		. "Il tuo cognome e': " . $cognome . "\n"
+		. "La tua data di nascita (come metodo date )e': " . $data . "\n"
+		. "il tuo giorno di nascita e': " . $giorno . "\n"
+		. "il tuo mese di nascita e': " . $mese . "\n"
+		. "il tuo anno di nascita e': " . $anno . "\n"
+		. "Il tuo indirizzo e': " . $indirizzo . "\n"
+		. "Il tuo cognome e': " . $cognome . "\n"
+		. "La tua email e': " . $email;
+		mail('$email', 'Grazie per esserti registrato nella piattaforma di prova di Daniele Farruggia\n ', $testo);
 
-		
-		
+
+
 	echo"	<p align='center'>
 			<font  color='red'>I TUOI DATI SONO<br></font>
 		</p>
-		
+			
 			<fieldset>
+			
 			Il tuo nome e': $nome <br>
 			Il tuo cognome e': $cognome <br>
 			La tua data di nascita (come metodo date )e': $data <br>
@@ -74,6 +74,12 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 			
 			
 		</fieldset>";
+	}
+	else
+	{	
+		echo "
+		<font color='red' size='5'>Errore! Dati inseriti non validi</font>
+		<button onclick=\"location.href='index.php'\">Torna alla schermata iniziale</button>");
 	}
 		
 }
