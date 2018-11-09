@@ -33,7 +33,7 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 	{
 		$j=false;
 		$message = "inserimento mese errato";
-		echo "<script type='text/javascript'>alert('$message');</script>";
+		echo "<script type='text/javascript'>alert('$message');</script> $month $mese";
 	}
 	if(!chkEmail($email))
 	{
@@ -58,17 +58,6 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 			La tua email e': $email<br>
 		</fieldset>";
 	}
-					
-	else 
-		{
-        	echo"
-			<font size='10' color='red'>Dati inseriti errati riprovare</font> <br>
-            		<input type=\"button\" onclick=\"location.href='index.php'\" value=\"Torna alla schermata iniziale\"/>
-		    ";
-            
-        }
-	
-  
 		
 }
  function chkEmail($email)
