@@ -89,7 +89,7 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 $op=$_POST['op'];
 $nome=$_POST['nome'];
 $cognome=$_POST['cognome'];
-$data = date('d-m-Y', strtotime($_POST['data']));
+$data = date('d-F-Y', strtotime($_POST['data']));
 $indirizzo=$_POST['indirizzo'];
 $login=$_POST['login'];
 $pass=$_POST['password'];
