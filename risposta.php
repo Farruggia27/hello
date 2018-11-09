@@ -53,6 +53,7 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 	. "Il tuo cognome e': " . $cognome . "\n"
 	. "La tua email e': " . $email;
 	mail('$email', 'Grazie per esserti registrato nella piattaforma di prova di Daniele Farruggia\n ', $testo);
+		echo "funzione email fatta";
 
 		
 		
