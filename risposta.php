@@ -13,15 +13,33 @@ if (($login=='mamma') and ($pass=='ciao'))
 function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 {
 	$j=true;
-    if($anno<1900||$anno>2018||$giorno<1||$giorno>31)
-    {
-    	$j=false;
-    }
-    if(!chkEmail($email))
-    {
-    	$j=false;
-    }
-    if($j) 
+	$date  = strtotime($data);
+	$day   = date('d',$date);
+	$month = date('m',$date);
+	$year  = date('Y',$date);
+	if($anno<1900||$anno>2018||$year!=$anno)
+	{
+		$j=false;
+		$message = "Inserimento anno errato";
+		echo "<script type='text/javascript'>alert('$message');</script>";
+	}
+	if($giorno<1||$giorno>31||$day!=$giorno)
+	{
+		$j=false;
+		$message = "Inserimento giorno errato";
+		echo "<script type='text/javascript'>alert('$message');</script>";
+	}
+	if($month!=$mese)
+	{
+		$j=false;
+		$message = "inserimento mese errato";
+		echo "<script type='text/javascript'>alert('$message');</script>";
+	}
+	if(!chkEmail($email))
+	{
+	$j=false;
+	}
+	if($j) 
 	{ 
 	
 	echo"	<p align='center'>
@@ -92,7 +110,6 @@ $mese=$_POST['mese'];
 $anno=$_POST['anno'];
 switch ($op){
       case "dati":
-		
 		dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo,$email);
            break;
       case "check":
