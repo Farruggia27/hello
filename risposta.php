@@ -10,9 +10,10 @@ if (($login=='mamma') and ($pass=='ciao'))
 	 echo"Login o Password SBAGLIATA";
  };
 }
-function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
+function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email,$mesenom)
 {
 	$j=true;
+	
 	$date  = strtotime($data);
 	$day   = date('d',$date);
 	$month = date('m',$date);
@@ -33,7 +34,7 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 	{
 		$j=false;
 		$message = "inserimento mese errato";
-		echo "<script type='text/javascript'>alert('$message');</script> $month $mese";
+		echo "<script type='text/javascript'>alert('$message');</script> ";
 	}
 	if(!chkEmail($email))
 	{
@@ -52,7 +53,7 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 			La tua data di nascita (come metodo date )e': $data <br>
             
 		    	il tuo giorno di nascita e': $giorno<br>
-		     	il tuo mese di nascita e': $mese<br>
+		     	il tuo mese di nascita e': $mesenom<br>
 		      	il tuo anno di nascita e': $anno<br>
 			Il tuo indirizzo e': $indirizzo <br>
 			La tua email e': $email<br>
@@ -86,6 +87,7 @@ function dati($nome, $cognome, $data,$giorno,$mese,$anno,$indirizzo,$email)
 	
 }
 /******* Programma principale *******/
+
 $op=$_POST['op'];
 $nome=$_POST['nome'];
 $cognome=$_POST['cognome'];
@@ -96,16 +98,17 @@ $pass=$_POST['password'];
 $email=$_POST['email'];
 $giorno=$_POST['giorno'];
 $mese=$_POST['mese'];
+$mesenom= $_REQUEST['mese'];
 $anno=$_POST['anno'];
 switch ($op){
       case "dati":
-		dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo,$email);
+		dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo,$email,$mesenom);
            break;
       case "check":
            contrpass($login,$pass);
            break;
       default:
-		dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo,$email);
+		dati($nome,$cognome,$data,$giorno,$mese,$anno,$indirizzo,$email,$mesenom);
            break;
            }
 ?>
